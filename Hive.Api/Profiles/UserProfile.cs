@@ -7,6 +7,7 @@ namespace Hive.Api.Profiles
 		public UserProfile()
 		{
 			CreateMap<Data.Models.TbUser, Dtos.User>();
+			CreateMap<Dtos.User, Data.Models.TbUser>();
 		}
 	}
 }

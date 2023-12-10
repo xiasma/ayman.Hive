@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Hive.Api.Dtos;
+using Hive.Data.Models;
 using Hive.Data.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration.UserSecrets;
 using System.Text.Json;
 
 namespace Hive.Api.Controllers
@@ -39,5 +41,35 @@ namespace Hive.Api.Controllers
 			return Ok(_mapper.Map<IEnumerable<User>>(tbUsers));
 		}
 
+		[HttpGet("{id}", Name="GetUser")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		public async Task<IActionResult> GetUser(int id)
+		{
+			var user= await _usersRepository.GetUserAsync(id);
+			if (user == null)
+			{
+				return NotFound();
+			}
+
+			return Ok(_mapper.Map<User>(user));
+		}
+
+		[HttpPost]
+		public async Task<ActionResult<User>> CreateUser(User user)
+		{
+			var userModel = _mapper.Map<TbUser>(user);
+			await _usersRepository.AddUserAsync(userModel);
+
+			await _usersRepository.SaveChangesAsync();
+
+			var createdUserToReturn = _mapper.Map<TbUser>(user);
+
+			return CreatedAtRoute(
+				"GetUser",
+				new { id = createdUserToReturn.Id },
+				createdUserToReturn);
+		}
 	}
 }
