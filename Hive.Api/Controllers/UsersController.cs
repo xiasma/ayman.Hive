@@ -3,6 +3,7 @@ using Hive.Api.Dtos;
 using Hive.Data.Models;
 using Hive.Data.Repositories;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration.UserSecrets;
 using System.Text.Json;
@@ -71,5 +72,62 @@ namespace Hive.Api.Controllers
 				new { id = createdUserToReturn.Id },
 				createdUserToReturn);
 		}
+
+		[HttpPut("{userId}")]
+		public async Task<ActionResult> ReplaceUser(int userId, UpdateUser user)
+		{
+			var userModel = await _usersRepository.GetUserAsync(userId);
+			if (userModel == null)
+			{
+				return NotFound();
+			}
+
+			_mapper.Map(user, userModel);
+
+			await _usersRepository.SaveChangesAsync();
+
+			return NoContent();
+		}
+
+		/// <summary>
+		/// Partially updates a User resource.
+		/// </summary>
+		/// <param name="userId">The ID of the user to modify.</param>
+		/// <param name="patchDocument"></param>
+		/// <example>PATCH https://localhost:7025/api/v1/users/16 
+		/// -H 'Content-Type: application/json'
+		/// -H 'Accept: application/json'
+		/// -d '[{"op": "replace","path": "/Surname","value": "this is his new surname"},{"op": "replace","path": "/Adusername","value": "waynesusername"}]'
+		/// </example>
+		[HttpPatch("{userId}")]
+		public async Task<ActionResult> ChangeUser(int userId, JsonPatchDocument<UpdateUser> patchDocument)
+		{
+			if (!await _usersRepository.UserExistsAsync(userId))
+			{
+				return NotFound();
+			}
+
+			var userModel = await _usersRepository.GetUserAsync(userId);
+
+			var userToPatch = _mapper.Map<UpdateUser>(userModel);
+
+			patchDocument.ApplyTo(userToPatch, ModelState);
+
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
+			if (!TryValidateModel(userToPatch))
+			{
+				return BadRequest(ModelState);
+			}
+
+			_mapper.Map(userToPatch, userModel);
+			await _usersRepository.SaveChangesAsync();
+
+			return NoContent();
+		}
+
 	}
 }

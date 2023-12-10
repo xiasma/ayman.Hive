@@ -19,17 +19,18 @@ namespace Hive.Data.Repositories
 
 		public void DeleteUser(TbUser user)
 		{
-			_context.TbUsers.Remove(user);
+			user.DeletedOn = DateTime.UtcNow;
+			user.Deleted = true;
 		}
 
 		public async Task<TbUser?> GetUserAsync(int userId)
 		{
-			return await _context.TbUsers.Where(c => c.Id == userId).FirstOrDefaultAsync();
+			return await _context.TbUsers.Where(u => u.Id == userId && !u.Deleted).FirstOrDefaultAsync();
 		}
 
 		public async Task<IEnumerable<TbUser>> GetUsersAsync()
 		{
-			return await _context.TbUsers.OrderBy(u => u.Adusername).ToListAsync();
+			return await _context.TbUsers.Where(u => !u.Deleted).OrderBy(u => u.Adusername).ToListAsync();
 		}
 
 		public async Task<(IEnumerable<TbUser>, PaginationMetadata)> GetUsersAsync(string? name, int pageNumber, int pageSize)
@@ -39,10 +40,10 @@ namespace Hive.Data.Repositories
 			if (!string.IsNullOrWhiteSpace(name))
 			{
 				name = name.Trim();
-				collection = collection.Where(c =>
-					c.Adusername.Contains(name) ||
-					c.Forenames.Contains(name) ||
-					c.Surname.Contains(name));
+				collection = collection.Where(u =>
+					u.Adusername.Contains(name) ||
+					u.Forenames.Contains(name) ||
+					u.Surname.Contains(name));
 			}
 
 			var totalItemCount = await collection.CountAsync();
@@ -50,7 +51,7 @@ namespace Hive.Data.Repositories
 			var paginationMetadata = new PaginationMetadata(
 				totalItemCount, pageSize, pageNumber);
 
-			var collectionToReturn = await collection.OrderBy(c => c.Adusername)
+			var collectionToReturn = await collection.OrderBy(u => u.Adusername)
 				.Skip(pageSize * (pageNumber - 1))
 				.Take(pageSize)
 				.ToListAsync();

@@ -11,6 +11,7 @@ namespace Hive.Data.Repositories
 		Task<bool> UserExistsAsync(int userId);
 		Task AddUserAsync(TbUser user);
 		void DeleteUser(TbUser user);
+		
 		Task<bool> SaveChangesAsync();
 	}
 }

@@ -8,6 +8,7 @@ namespace Hive.Api.Profiles
 		{
 			CreateMap<Data.Models.TbUser, Dtos.User>();
 			CreateMap<Dtos.User, Data.Models.TbUser>();
-		}
+			CreateMap<Data.Models.TbUser, Dtos.UpdateUser>();
+			CreateMap<Dtos.UpdateUser, Data.Models.TbUser>();		}
 	}
 }
