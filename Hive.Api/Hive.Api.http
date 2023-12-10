@@ -1,0 +1,6 @@
+@Hive.Api_HostAddress = http://localhost:5291
+
+GET {{Hive.Api_HostAddress}}/users/
+Accept: application/json
+
+###

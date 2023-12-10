@@ -1,0 +1,944 @@
+2023-12-10 17:32:06.701 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:32:06.815 +00:00 [DBG] Hosting starting
+2023-12-10 17:32:07.184 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:32:07.185 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:32:07.186 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:32:07.187 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:32:07.188 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:32:07.189 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:32:07.190 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:32:07.191 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:32:07.192 +00:00 [DBG] Hosting started
+2023-12-10 17:32:07.672 +00:00 [DBG] Connection id "0HMVPKNNEVL1K" accepted.
+2023-12-10 17:32:07.672 +00:00 [DBG] Connection id "0HMVPKNNEVL1L" accepted.
+2023-12-10 17:32:07.672 +00:00 [DBG] Connection id "0HMVPKNNEVL1K" received FIN.
+2023-12-10 17:32:07.675 +00:00 [DBG] Connection id "0HMVPKNNEVL1L" started.
+2023-12-10 17:32:07.672 +00:00 [DBG] Connection id "0HMVPKNNEVL1L" received FIN.
+2023-12-10 17:32:07.675 +00:00 [DBG] Connection id "0HMVPKNNEVL1K" started.
+2023-12-10 17:32:07.691 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:32:07.691 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:32:07.720 +00:00 [DBG] Connection id "0HMVPKNNEVL1K" stopped.
+2023-12-10 17:32:07.720 +00:00 [DBG] Connection id "0HMVPKNNEVL1L" stopped.
+2023-12-10 17:32:07.724 +00:00 [DBG] Connection id "0HMVPKNNEVL1L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:32:07.724 +00:00 [DBG] Connection id "0HMVPKNNEVL1K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:32:09.797 +00:00 [DBG] Connection id "0HMVPKNNEVL1M" accepted.
+2023-12-10 17:32:09.807 +00:00 [DBG] Connection id "0HMVPKNNEVL1M" started.
+2023-12-10 17:32:09.812 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" accepted.
+2023-12-10 17:32:09.815 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" started.
+2023-12-10 17:32:09.853 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" received FIN.
+2023-12-10 17:32:09.867 +00:00 [DBG] Connection 0HMVPKNNEVL1M established using the following protocol: "Tls12"
+2023-12-10 17:32:09.867 +00:00 [DBG] Connection 0HMVPKNNEVL1N established using the following protocol: "Tls12"
+2023-12-10 17:32:09.909 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" is closed. The last processed stream ID was 0.
+2023-12-10 17:32:09.911 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:32:09.914 +00:00 [DBG] The connection queue processing loop for 0HMVPKNNEVL1N completed.
+2023-12-10 17:32:09.916 +00:00 [DBG] Connection id "0HMVPKNNEVL1N" stopped.
+2023-12-10 17:32:09.933 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/weatherforecast - null null
+2023-12-10 17:32:10.108 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:34:08.443 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:34:08.574 +00:00 [DBG] Hosting starting
+2023-12-10 17:34:08.737 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:34:08.739 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:34:08.740 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:34:08.741 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:34:08.741 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:34:08.742 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:34:08.743 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:34:08.744 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:34:08.745 +00:00 [DBG] Hosting started
+2023-12-10 17:34:09.059 +00:00 [DBG] Connection id "0HMVPKORKLCSE" accepted.
+2023-12-10 17:34:09.059 +00:00 [DBG] Connection id "0HMVPKORKLCSE" received FIN.
+2023-12-10 17:34:09.061 +00:00 [DBG] Connection id "0HMVPKORKLCSE" started.
+2023-12-10 17:34:09.077 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:34:09.107 +00:00 [DBG] Connection id "0HMVPKORKLCSE" stopped.
+2023-12-10 17:34:09.111 +00:00 [DBG] Connection id "0HMVPKORKLCSE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:34:16.587 +00:00 [DBG] Connection id "0HMVPKORKLCSF" accepted.
+2023-12-10 17:34:16.598 +00:00 [DBG] Connection id "0HMVPKORKLCSF" started.
+2023-12-10 17:34:16.655 +00:00 [DBG] Connection 0HMVPKORKLCSF established using the following protocol: "Tls12"
+2023-12-10 17:34:16.732 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/weatherforecast - null null
+2023-12-10 17:34:16.816 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:34:16.833 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:34:16.845 +00:00 [DBG] No candidates found for the request path '/weatherforecast'
+2023-12-10 17:34:16.846 +00:00 [DBG] Request did not match any endpoints
+2023-12-10 17:34:16.850 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/weatherforecast - 404 0 null 123.0129ms
+2023-12-10 17:34:16.854 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/weatherforecast, Response status code: 404
+2023-12-10 17:34:25.494 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/users - null null
+2023-12-10 17:34:25.504 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:34:25.506 +00:00 [DBG] No candidates found for the request path '/users'
+2023-12-10 17:34:25.507 +00:00 [DBG] Request did not match any endpoints
+2023-12-10 17:34:25.508 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/users - 404 0 null 14.6101ms
+2023-12-10 17:34:25.512 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/users, Response status code: 404
+2023-12-10 17:35:50.371 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:35:50.391 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:35:50.396 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:35:50.404 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:35:50.410 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:35:50.416 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseAuthorization() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-10 17:35:50.461 +00:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-10 17:35:50.484 +00:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-10 17:35:50.485 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 500 null text/html; charset=utf-8 116.1555ms
+2023-12-10 17:35:50.505 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_vs/browserLink - null null
+2023-12-10 17:35:50.506 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-10 17:35:50.520 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 14.9133ms
+2023-12-10 17:35:50.675 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_vs/browserLink - 200 null text/javascript; charset=UTF-8 170.3831ms
+2023-12-10 17:35:50.698 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/favicon.ico - null null
+2023-12-10 17:35:50.703 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:35:50.704 +00:00 [DBG] No candidates found for the request path '/favicon.ico'
+2023-12-10 17:35:50.706 +00:00 [DBG] Request did not match any endpoints
+2023-12-10 17:35:50.707 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/favicon.ico - 404 0 null 9.0048ms
+2023-12-10 17:35:50.711 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/favicon.ico, Response status code: 404
+2023-12-10 17:36:18.000 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:36:18.132 +00:00 [DBG] Hosting starting
+2023-12-10 17:36:18.352 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:36:18.353 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:36:18.354 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:36:18.354 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:36:18.355 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:36:18.356 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:36:18.357 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:36:18.358 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:36:18.359 +00:00 [DBG] Hosting started
+2023-12-10 17:36:18.836 +00:00 [DBG] Connection id "0HMVPKQ2AABB2" received FIN.
+2023-12-10 17:36:18.836 +00:00 [DBG] Connection id "0HMVPKQ2AABB1" received FIN.
+2023-12-10 17:36:18.842 +00:00 [DBG] Connection id "0HMVPKQ2AABB1" accepted.
+2023-12-10 17:36:18.842 +00:00 [DBG] Connection id "0HMVPKQ2AABB2" accepted.
+2023-12-10 17:36:18.844 +00:00 [DBG] Connection id "0HMVPKQ2AABB1" started.
+2023-12-10 17:36:18.845 +00:00 [DBG] Connection id "0HMVPKQ2AABB2" started.
+2023-12-10 17:36:18.858 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:36:18.858 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:36:18.897 +00:00 [DBG] Connection id "0HMVPKQ2AABB1" stopped.
+2023-12-10 17:36:18.897 +00:00 [DBG] Connection id "0HMVPKQ2AABB2" stopped.
+2023-12-10 17:36:18.901 +00:00 [DBG] Connection id "0HMVPKQ2AABB2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:36:18.901 +00:00 [DBG] Connection id "0HMVPKQ2AABB1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:36:23.423 +00:00 [DBG] Connection id "0HMVPKQ2AABB3" accepted.
+2023-12-10 17:36:23.425 +00:00 [DBG] Connection id "0HMVPKQ2AABB3" started.
+2023-12-10 17:36:23.468 +00:00 [DBG] Connection 0HMVPKQ2AABB3 established using the following protocol: "Tls12"
+2023-12-10 17:36:23.504 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:36:23.584 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:36:23.597 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:36:23.611 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:36:23.616 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:36:23.620 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:36:23.622 +00:00 [INF] Executing endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:36:23.653 +00:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hive.Api.Dtos.User]]] GetUsers(System.String, Int32, Int32) on controller Hive.Api.Controllers.UsersController (Hive.Api).
+2023-12-10 17:36:23.657 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-10 17:36:23.660 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-10 17:36:23.661 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:36:23.664 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-10 17:36:23.665 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:36:23.668 +00:00 [DBG] Executing controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:36:24.145 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-10 17:36:24.293 +00:00 [DBG] Executed controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:36:24.297 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-12-10 17:36:24.299 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-12-10 17:36:24.301 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-12-10 17:36:24.302 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:36:24.304 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:36:24.305 +00:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-12-10 17:36:24.308 +00:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-12-10 17:36:24.311 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:36:24.312 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:36:24.313 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:36:24.315 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:36:24.317 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:36:24.318 +00:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:36:24.320 +00:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:36:24.321 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:36:24.323 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:36:24.324 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:36:24.326 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:36:24.328 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:36:24.329 +00:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:36:24.330 +00:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:36:25.569 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'HiveDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2023-12-10 17:36:25.758 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .Count()'
+2023-12-10 17:36:25.894 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Tb_Users AS t), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        Hive.Data.Models.HiveDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-12-10 17:36:25.929 +00:00 [DBG] Creating DbConnection.
+2023-12-10 17:36:25.954 +00:00 [DBG] Created DbConnection. (24ms).
+2023-12-10 17:36:25.959 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:36:26.271 +00:00 [ERR] An error occurred using the connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:36:26.280 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Hive.Data.Models.HiveDbContext'.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-10 17:36:26.449 +00:00 [INF] Executed action Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) in 2780.0784ms
+2023-12-10 17:36:26.453 +00:00 [INF] Executed endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:36:26.455 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Hive.Data.Repositories.UsersRepository.GetUsersAsync(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Data\Repositories\UsersRepository.cs:line 48
+   at Hive.Api.Controllers.UsersController.GetUsers(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Api\Controllers\UsersController.cs:line 35
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-10 17:36:26.532 +00:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-10 17:36:26.550 +00:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-10 17:36:26.557 +00:00 [DBG] 'HiveDbContext' disposed.
+2023-12-10 17:36:26.565 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-10 17:36:26.565 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_vs/browserLink - null null
+2023-12-10 17:36:26.567 +00:00 [DBG] Disposing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:36:26.583 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 18.1154ms
+2023-12-10 17:36:26.596 +00:00 [DBG] Disposed connection to database '' on server '' (17ms).
+2023-12-10 17:36:26.599 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 500 null text/html; charset=utf-8 3098.3621ms
+2023-12-10 17:36:26.629 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.5066ms
+2023-12-10 17:36:28.252 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/weatherforecast - null null
+2023-12-10 17:36:28.276 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:36:28.277 +00:00 [DBG] No candidates found for the request path '/weatherforecast'
+2023-12-10 17:36:28.278 +00:00 [DBG] Request did not match any endpoints
+2023-12-10 17:36:28.279 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/weatherforecast - 404 0 null 27.31ms
+2023-12-10 17:36:28.286 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/weatherforecast, Response status code: 404
+2023-12-10 17:37:11.221 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:37:11.238 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:37:11.240 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:37:11.242 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:37:11.244 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:37:11.245 +00:00 [INF] Executing endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:37:11.246 +00:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hive.Api.Dtos.User]]] GetUsers(System.String, Int32, Int32) on controller Hive.Api.Controllers.UsersController (Hive.Api).
+2023-12-10 17:37:11.248 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-10 17:37:11.250 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-10 17:37:11.251 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:37:11.253 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-10 17:37:11.254 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:37:11.256 +00:00 [DBG] Executing controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:37:11.259 +00:00 [DBG] Executed controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:37:11.261 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-12-10 17:37:11.262 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-12-10 17:37:11.263 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-12-10 17:37:11.264 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:37:11.265 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:37:11.267 +00:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-12-10 17:37:11.269 +00:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-12-10 17:37:11.270 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:37:11.272 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:37:11.273 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:37:11.276 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:37:11.277 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:37:11.279 +00:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:37:11.280 +00:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:37:11.281 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:37:11.283 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:37:11.284 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:37:11.286 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:37:11.287 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:37:11.288 +00:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:37:11.289 +00:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:37:11.303 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'HiveDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2023-12-10 17:37:11.310 +00:00 [DBG] Creating DbConnection.
+2023-12-10 17:37:11.313 +00:00 [DBG] Created DbConnection. (5ms).
+2023-12-10 17:37:11.314 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:37:11.316 +00:00 [ERR] An error occurred using the connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:37:11.319 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Hive.Data.Models.HiveDbContext'.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-10 17:37:11.430 +00:00 [INF] Executed action Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) in 174.1892ms
+2023-12-10 17:37:11.434 +00:00 [INF] Executed endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:37:11.437 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Hive.Data.Repositories.UsersRepository.GetUsersAsync(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Data\Repositories\UsersRepository.cs:line 48
+   at Hive.Api.Controllers.UsersController.GetUsers(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Api\Controllers\UsersController.cs:line 35
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-10 17:37:11.469 +00:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-10 17:37:11.473 +00:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-10 17:37:11.478 +00:00 [DBG] 'HiveDbContext' disposed.
+2023-12-10 17:37:11.479 +00:00 [DBG] Disposing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:37:11.481 +00:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-12-10 17:37:11.483 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 500 null text/html; charset=utf-8 261.9924ms
+2023-12-10 17:37:11.485 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-10 17:37:11.486 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_vs/browserLink - null null
+2023-12-10 17:37:11.493 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 8.0989ms
+2023-12-10 17:37:11.522 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.7177ms
+2023-12-10 17:39:49.357 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:39:49.504 +00:00 [DBG] Hosting starting
+2023-12-10 17:39:49.703 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:39:49.704 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:39:49.706 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:39:49.707 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:39:49.708 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:39:49.710 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:39:49.711 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:39:49.712 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:39:49.713 +00:00 [DBG] Hosting started
+2023-12-10 17:39:49.857 +00:00 [DBG] Connection id "0HMVPKS16OO9S" accepted.
+2023-12-10 17:39:49.860 +00:00 [DBG] Connection id "0HMVPKS16OO9S" started.
+2023-12-10 17:39:49.869 +00:00 [DBG] Connection id "0HMVPKS16OO9T" accepted.
+2023-12-10 17:39:49.871 +00:00 [DBG] Connection id "0HMVPKS16OO9T" started.
+2023-12-10 17:39:49.885 +00:00 [DBG] Connection id "0HMVPKS16OO9T" received FIN.
+2023-12-10 17:39:49.885 +00:00 [DBG] Connection id "0HMVPKS16OO9S" received FIN.
+2023-12-10 17:39:49.892 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:39:49.892 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:39:49.928 +00:00 [DBG] Connection id "0HMVPKS16OO9T" stopped.
+2023-12-10 17:39:49.928 +00:00 [DBG] Connection id "0HMVPKS16OO9S" stopped.
+2023-12-10 17:39:49.932 +00:00 [DBG] Connection id "0HMVPKS16OO9T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:39:49.932 +00:00 [DBG] Connection id "0HMVPKS16OO9S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:39:57.598 +00:00 [DBG] Connection id "0HMVPKS16OO9U" accepted.
+2023-12-10 17:39:57.602 +00:00 [DBG] Connection id "0HMVPKS16OO9U" started.
+2023-12-10 17:39:57.645 +00:00 [DBG] Connection 0HMVPKS16OO9U established using the following protocol: "Tls12"
+2023-12-10 17:39:57.690 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:39:57.821 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:39:57.833 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:39:57.847 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:39:57.850 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:39:57.855 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:39:57.857 +00:00 [INF] Executing endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:39:57.878 +00:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hive.Api.Dtos.User]]] GetUsers(System.String, Int32, Int32) on controller Hive.Api.Controllers.UsersController (Hive.Api).
+2023-12-10 17:39:57.881 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-10 17:39:57.882 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-10 17:39:57.884 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:39:57.886 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-10 17:39:57.888 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:39:57.891 +00:00 [DBG] Executing controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:39:57.993 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-10 17:39:58.130 +00:00 [DBG] Executed controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:39:58.135 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-12-10 17:39:58.138 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-12-10 17:39:58.140 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-12-10 17:39:58.142 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:39:58.143 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:39:58.145 +00:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-12-10 17:39:58.148 +00:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-12-10 17:39:58.150 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:39:58.151 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:39:58.152 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:39:58.155 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:39:58.156 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:39:58.157 +00:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:39:58.159 +00:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:39:58.161 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:39:58.163 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:39:58.164 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:39:58.166 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:39:58.167 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:39:58.169 +00:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:39:58.171 +00:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:39:59.493 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'HiveDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2023-12-10 17:39:59.542 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .Count()'
+2023-12-10 17:39:59.691 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Tb_Users AS t), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        Hive.Data.Models.HiveDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-12-10 17:39:59.733 +00:00 [DBG] Creating DbConnection.
+2023-12-10 17:39:59.750 +00:00 [DBG] Created DbConnection. (15ms).
+2023-12-10 17:39:59.756 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:39:59.848 +00:00 [ERR] An error occurred using the connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:39:59.857 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Hive.Data.Models.HiveDbContext'.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-10 17:40:00.025 +00:00 [INF] Executed action Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) in 2132.6852ms
+2023-12-10 17:40:00.028 +00:00 [INF] Executed endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:40:00.031 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Globalization.CultureNotFoundException: Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'name')
+en-us is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Hive.Data.Repositories.UsersRepository.GetUsersAsync(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Data\Repositories\UsersRepository.cs:line 48
+   at Hive.Api.Controllers.UsersController.GetUsers(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Api\Controllers\UsersController.cs:line 35
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-10 17:40:00.077 +00:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-10 17:40:00.095 +00:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-10 17:40:00.101 +00:00 [DBG] 'HiveDbContext' disposed.
+2023-12-10 17:40:00.107 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-10 17:40:00.107 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_vs/browserLink - null null
+2023-12-10 17:40:00.111 +00:00 [DBG] Disposing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:40:00.126 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 18.5087ms
+2023-12-10 17:40:00.135 +00:00 [DBG] Disposed connection to database '' on server '' (15ms).
+2023-12-10 17:40:00.139 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 500 null text/html; charset=utf-8 2454.0911ms
+2023-12-10 17:40:00.169 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.4447ms
+2023-12-10 17:41:13.206 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:41:13.339 +00:00 [DBG] Hosting starting
+2023-12-10 17:41:13.525 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:41:13.526 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:41:13.526 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:41:13.527 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:41:13.528 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:41:13.529 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:41:13.530 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:41:13.531 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:41:13.532 +00:00 [DBG] Hosting started
+2023-12-10 17:41:13.741 +00:00 [DBG] Connection id "0HMVPKSQ6O273" accepted.
+2023-12-10 17:41:13.741 +00:00 [DBG] Connection id "0HMVPKSQ6O274" accepted.
+2023-12-10 17:41:13.745 +00:00 [DBG] Connection id "0HMVPKSQ6O273" started.
+2023-12-10 17:41:13.746 +00:00 [DBG] Connection id "0HMVPKSQ6O274" started.
+2023-12-10 17:41:13.758 +00:00 [DBG] Connection id "0HMVPKSQ6O273" received FIN.
+2023-12-10 17:41:13.758 +00:00 [DBG] Connection id "0HMVPKSQ6O274" received FIN.
+2023-12-10 17:41:13.773 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:41:13.773 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:41:13.809 +00:00 [DBG] Connection id "0HMVPKSQ6O274" stopped.
+2023-12-10 17:41:13.809 +00:00 [DBG] Connection id "0HMVPKSQ6O273" stopped.
+2023-12-10 17:41:13.815 +00:00 [DBG] Connection id "0HMVPKSQ6O273" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:41:13.815 +00:00 [DBG] Connection id "0HMVPKSQ6O274" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:41:21.909 +00:00 [DBG] Connection id "0HMVPKSQ6O275" accepted.
+2023-12-10 17:41:21.915 +00:00 [DBG] Connection id "0HMVPKSQ6O275" started.
+2023-12-10 17:41:21.963 +00:00 [DBG] Connection 0HMVPKSQ6O275 established using the following protocol: "Tls12"
+2023-12-10 17:41:22.016 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:41:22.094 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:41:22.106 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:41:22.121 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:41:22.125 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:41:22.130 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:41:22.132 +00:00 [INF] Executing endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:41:22.161 +00:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hive.Api.Dtos.User]]] GetUsers(System.String, Int32, Int32) on controller Hive.Api.Controllers.UsersController (Hive.Api).
+2023-12-10 17:41:22.166 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-10 17:41:22.167 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-10 17:41:22.169 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:41:22.171 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-10 17:41:22.173 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:41:22.176 +00:00 [DBG] Executing controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:41:22.275 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-10 17:41:22.404 +00:00 [DBG] Executed controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:41:22.410 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-12-10 17:41:22.415 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-12-10 17:41:22.417 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-12-10 17:41:22.419 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:41:22.420 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:41:22.422 +00:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-12-10 17:41:22.425 +00:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-12-10 17:41:22.429 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:41:22.432 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:41:22.435 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:41:22.437 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:41:22.438 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:41:22.439 +00:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:41:22.441 +00:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:41:22.443 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:41:22.445 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:41:22.447 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:41:22.449 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:41:22.450 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:41:22.451 +00:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:41:22.452 +00:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:41:23.710 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'HiveDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2023-12-10 17:41:23.763 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .Count()'
+2023-12-10 17:41:23.913 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Tb_Users AS t), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        Hive.Data.Models.HiveDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-12-10 17:41:23.945 +00:00 [DBG] Creating DbConnection.
+2023-12-10 17:41:23.965 +00:00 [DBG] Created DbConnection. (19ms).
+2023-12-10 17:41:23.969 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.446 +00:00 [DBG] Opened connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.451 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-10 17:41:24.456 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2023-12-10 17:41:24.461 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (10ms).
+2023-12-10 17:41:24.472 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tb_Users] AS [t]
+2023-12-10 17:41:24.509 +00:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tb_Users] AS [t]
+2023-12-10 17:41:24.528 +00:00 [DBG] Closing data reader to 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.534 +00:00 [DBG] A data reader for 'HICS' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 18ms reading results.
+2023-12-10 17:41:24.539 +00:00 [DBG] Closing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.545 +00:00 [DBG] Closed connection to database 'HICS' on server '(localdb)\MSSQLLocalDB' (6ms).
+2023-12-10 17:41:24.554 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .OrderBy(c => c.Adusername)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2023-12-10 17:41:24.600 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TbUser>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TbUser.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TbUser.AdcreatedOn (DateTime?), 1], [Property: TbUser.Addisabled (bool) Required, 2], [Property: TbUser.Adguid (string) MaxLength(50) ANSI, 3], [Property: TbUser.Adusername (string) Required MaxLength(255) ANSI, 4], [Property: TbUser.CreatedBy (int) Required, 5], [Property: TbUser.CreatedOn (DateTime) Required ValueGenerated.OnAdd, 6], [Property: TbUser.Deleted (bool) Required, 7], [Property: TbUser.DeletedBy (int?), 8], [Property: TbUser.DeletedOn (DateTime?), 9], [Property: TbUser.Department (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 10], [Property: TbUser.DistinguishedManager (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 11], [Property: TbUser.DistinguishedName (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 12], [Property: TbUser.Email (string) MaxLength(512) ANSI, 13], [Property: TbUser.Forenames (string) Required ValueGenerated.OnAdd MaxLength(512) ANSI, 14], [Property: TbUser.Gvguid (string) MaxLength(50) ANSI, 15], [Property: TbUser.HideFromList (bool) Required, 16], [Property: TbUser.LastOnline (DateTime?), 17], [Property: TbUser.Locked (bool) Required, 18], [Property: TbUser.LockedBy (int?), 19], [Property: TbUser.LockedOn (DateTime?), 20], [Property: TbUser.Manager (int) Required, 21], [Property: TbUser.ModifiedBy (int) Required, 22], [Property: TbUser.ModifiedOn (DateTime) Required ValueGenerated.OnAdd, 23], [Property: TbUser.Office (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 24], [Property: TbUser.Online (bool) Required, 25], [Property: TbUser.OpenedCount (int?) ValueGenerated.OnAdd, 26], [Property: TbUser.OpenedLast (DateTime?), 27], [Property: TbUser.PArFilterAdd (string) MaxLength(50) ANSI, 28], [Property: TbUser.PArFilterStatus (int?), 29], [Property: TbUser.PArFilterSupplier (int?), 30], [Property: TbUser.PArFilterType (string) MaxLength(50) ANSI, 31], [Property: TbUser.PArIncludeDisabled (int?), 32], [Property: TbUser.PArOrderBy (string) MaxLength(50) ANSI, 33], [Property: TbUser.PArOrderDirection (int?), 34], [Property: TbUser.PAraMineOnly (int?), 35], [Property: TbUser.PBiPrinter (string) MaxLength(255) ANSI, 36], [Property: TbUser.PCoAiFontSize (int) Required ValueGenerated.OnAdd, 37], [Property: TbUser.PCoAiSortOrder (int) Required ValueGenerated.OnAdd, 38], [Property: TbUser.PDocsLastSearch (string) MaxLength(255) ANSI, 39], [Property: TbUser.PItarActiveOnly (int?), 40], [Property: TbUser.PItarOrderBy (string) MaxLength(50) ANSI, 41], [Property: TbUser.PItarOrderDirection (int?), 42], [Property: TbUser.PLastButton (string) ValueGenerated.OnAdd MaxLength(50) ANSI, 43], [Property: TbUser.PLastEnvironment (int?) ValueGenerated.OnAdd, 44], [Property: TbUser.PLastPage (string) ValueGenerated.OnAdd MaxLength(50) ANSI, 45], [Property: TbUser.PPmHidePhantomised (int?), 46], [Property: TbUser.PSbuSkipProductChecks (int?) ValueGenerated.OnAdd, 47], [Property: TbUser.PSrHideClosed (int?), 48], [Property: TbUser.PSrHideSuperseded (int?), 49], [Property: TbUser.PSrOnlyMe (int?) ValueGenerated.OnAdd, 50], [Property: TbUser.PSrOrderBy (string) MaxLength(50) ANSI, 51], [Property: TbUser.PSrOrderDirection (int?), 52], [Property: TbUser.PSrPrinter (string) MaxLength(255) ANSI, 53], [Property: TbUser.PSrThisYearOnly (int?), 54], [Property: TbUser.PSrltIncludeCompleted (int?), 55], [Property: TbUser.PWediSearchInData (bool) Required Sentinel:True ValueGenerated.OnAdd, 56], [Property: TbUser.PWediSortOrder (int) Required, 57], [Property: TbUser.PoApprover (int?), 58], [Property: TbUser.PoCanRaise (bool) Required, 59], [Property: TbUser.PoLimit (int) Required, 60], [Property: TbUser.Surname (string) Required ValueGenerated.OnAdd MaxLength(512) ANSI, 61], [Property: TbUser.Title (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 62] }
+        SELECT t.ID, t.ADCreatedOn, t.ADDisabled, t.ADGUID, t.ADUsername, t.CreatedBy, t.CreatedOn, t.Deleted, t.DeletedBy, t.DeletedOn, t.Department, t.DistinguishedManager, t.DistinguishedName, t.Email, t.Forenames, t.GVGUID, t.HideFromList, t.LastOnline, t.Locked, t.LockedBy, t.LockedOn, t.Manager, t.ModifiedBy, t.ModifiedOn, t.Office, t.Online, t.OpenedCount, t.OpenedLast, t.P_AR_FilterAdd, t.P_AR_FilterStatus, t.P_AR_FilterSupplier, t.P_AR_FilterType, t.P_AR_IncludeDisabled, t.P_AR_OrderBy, t.P_AR_OrderDirection, t.P_ARA_MineOnly, t.P_BI_Printer, t.P_CoAI_FontSize, t.P_CoAI_SortOrder, t.P_DOCS_LastSearch, t.P_ITAR_ActiveOnly, t.P_ITAR_OrderBy, t.P_ITAR_OrderDirection, t.P_LastButton, t.P_LastEnvironment, t.P_LastPage, t.P_PM_HidePhantomised, t.P_SBU_SkipProductChecks, t.P_SR_HideClosed, t.P_SR_HideSuperseded, t.P_SR_OnlyMe, t.P_SR_OrderBy, t.P_SR_OrderDirection, t.P_SR_Printer, t.P_SR_ThisYearOnly, t.P_SRLT_IncludeCompleted, t.P_WEDI_SearchInData, t.P_WEDI_SortOrder, t.PO_Approver, t.PO_CanRaise, t.PO_Limit, t.Surname, t.Title
+        FROM Tb_Users AS t
+        ORDER BY t.ADUsername ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TbUser>, 
+    Hive.Data.Models.HiveDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-10 17:41:24.613 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.616 +00:00 [DBG] Opened connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.617 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-10 17:41:24.618 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-12-10 17:41:24.622 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-12-10 17:41:24.625 +00:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ID], [t].[ADCreatedOn], [t].[ADDisabled], [t].[ADGUID], [t].[ADUsername], [t].[CreatedBy], [t].[CreatedOn], [t].[Deleted], [t].[DeletedBy], [t].[DeletedOn], [t].[Department], [t].[DistinguishedManager], [t].[DistinguishedName], [t].[Email], [t].[Forenames], [t].[GVGUID], [t].[HideFromList], [t].[LastOnline], [t].[Locked], [t].[LockedBy], [t].[LockedOn], [t].[Manager], [t].[ModifiedBy], [t].[ModifiedOn], [t].[Office], [t].[Online], [t].[OpenedCount], [t].[OpenedLast], [t].[P_AR_FilterAdd], [t].[P_AR_FilterStatus], [t].[P_AR_FilterSupplier], [t].[P_AR_FilterType], [t].[P_AR_IncludeDisabled], [t].[P_AR_OrderBy], [t].[P_AR_OrderDirection], [t].[P_ARA_MineOnly], [t].[P_BI_Printer], [t].[P_CoAI_FontSize], [t].[P_CoAI_SortOrder], [t].[P_DOCS_LastSearch], [t].[P_ITAR_ActiveOnly], [t].[P_ITAR_OrderBy], [t].[P_ITAR_OrderDirection], [t].[P_LastButton], [t].[P_LastEnvironment], [t].[P_LastPage], [t].[P_PM_HidePhantomised], [t].[P_SBU_SkipProductChecks], [t].[P_SR_HideClosed], [t].[P_SR_HideSuperseded], [t].[P_SR_OnlyMe], [t].[P_SR_OrderBy], [t].[P_SR_OrderDirection], [t].[P_SR_Printer], [t].[P_SR_ThisYearOnly], [t].[P_SRLT_IncludeCompleted], [t].[P_WEDI_SearchInData], [t].[P_WEDI_SortOrder], [t].[PO_Approver], [t].[PO_CanRaise], [t].[PO_Limit], [t].[Surname], [t].[Title]
+FROM [Tb_Users] AS [t]
+ORDER BY [t].[ADUsername]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-12-10 17:41:24.701 +00:00 [INF] Executed DbCommand (78ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ID], [t].[ADCreatedOn], [t].[ADDisabled], [t].[ADGUID], [t].[ADUsername], [t].[CreatedBy], [t].[CreatedOn], [t].[Deleted], [t].[DeletedBy], [t].[DeletedOn], [t].[Department], [t].[DistinguishedManager], [t].[DistinguishedName], [t].[Email], [t].[Forenames], [t].[GVGUID], [t].[HideFromList], [t].[LastOnline], [t].[Locked], [t].[LockedBy], [t].[LockedOn], [t].[Manager], [t].[ModifiedBy], [t].[ModifiedOn], [t].[Office], [t].[Online], [t].[OpenedCount], [t].[OpenedLast], [t].[P_AR_FilterAdd], [t].[P_AR_FilterStatus], [t].[P_AR_FilterSupplier], [t].[P_AR_FilterType], [t].[P_AR_IncludeDisabled], [t].[P_AR_OrderBy], [t].[P_AR_OrderDirection], [t].[P_ARA_MineOnly], [t].[P_BI_Printer], [t].[P_CoAI_FontSize], [t].[P_CoAI_SortOrder], [t].[P_DOCS_LastSearch], [t].[P_ITAR_ActiveOnly], [t].[P_ITAR_OrderBy], [t].[P_ITAR_OrderDirection], [t].[P_LastButton], [t].[P_LastEnvironment], [t].[P_LastPage], [t].[P_PM_HidePhantomised], [t].[P_SBU_SkipProductChecks], [t].[P_SR_HideClosed], [t].[P_SR_HideSuperseded], [t].[P_SR_OnlyMe], [t].[P_SR_OrderBy], [t].[P_SR_OrderDirection], [t].[P_SR_Printer], [t].[P_SR_ThisYearOnly], [t].[P_SRLT_IncludeCompleted], [t].[P_WEDI_SearchInData], [t].[P_WEDI_SortOrder], [t].[PO_Approver], [t].[PO_CanRaise], [t].[PO_Limit], [t].[Surname], [t].[Title]
+FROM [Tb_Users] AS [t]
+ORDER BY [t].[ADUsername]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-12-10 17:41:24.732 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:41:24.838 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:41:24.841 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:41:24.844 +00:00 [DBG] Closing data reader to 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.846 +00:00 [DBG] A data reader for 'HICS' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 136ms reading results.
+2023-12-10 17:41:24.848 +00:00 [DBG] Closing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:24.849 +00:00 [DBG] Closed connection to database 'HICS' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-10 17:41:24.981 +00:00 [INF] Executed action Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) in 2804.3196ms
+2023-12-10 17:41:24.985 +00:00 [INF] Executed endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:41:24.989 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[Hive.Api.Dtos.User, Hive.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+TbUser -> User
+Hive.Data.Models.TbUser -> Hive.Api.Dtos.User
+   at lambda_method449(Closure, TbUser, User, ResolutionContext)
+   at lambda_method448(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method448(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Hive.Api.Controllers.UsersController.GetUsers(String name, Int32 pageNumber, Int32 pageSize) in F:\Dev\Hayman\Hive\Hive.Api\Controllers\UsersController.cs:line 39
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-10 17:41:25.038 +00:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-10 17:41:25.055 +00:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-10 17:41:25.060 +00:00 [DBG] 'HiveDbContext' disposed.
+2023-12-10 17:41:25.067 +00:00 [DBG] Disposing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:41:25.070 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-10 17:41:25.070 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/_vs/browserLink - null null
+2023-12-10 17:41:25.071 +00:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2023-12-10 17:41:25.086 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 500 null text/html; charset=utf-8 3077.1602ms
+2023-12-10 17:41:25.088 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 18.0905ms
+2023-12-10 17:41:25.130 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.9778ms
+2023-12-10 17:43:16.941 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-10 17:43:17.102 +00:00 [DBG] Hosting starting
+2023-12-10 17:43:17.365 +00:00 [INF] Now listening on: https://localhost:7025
+2023-12-10 17:43:17.378 +00:00 [INF] Now listening on: http://localhost:5291
+2023-12-10 17:43:17.381 +00:00 [DBG] Loaded hosting startup assembly Hive.Api
+2023-12-10 17:43:17.384 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-10 17:43:17.386 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-10 17:43:17.389 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 17:43:17.391 +00:00 [INF] Hosting environment: Development
+2023-12-10 17:43:17.392 +00:00 [INF] Content root path: F:\Dev\Hayman\Hive\Hive.Api
+2023-12-10 17:43:17.393 +00:00 [DBG] Hosting started
+2023-12-10 17:43:17.467 +00:00 [DBG] Connection id "0HMVPKTV2MF15" accepted.
+2023-12-10 17:43:17.467 +00:00 [DBG] Connection id "0HMVPKTV2MF16" accepted.
+2023-12-10 17:43:17.469 +00:00 [DBG] Connection id "0HMVPKTV2MF15" started.
+2023-12-10 17:43:17.470 +00:00 [DBG] Connection id "0HMVPKTV2MF16" started.
+2023-12-10 17:43:17.510 +00:00 [DBG] Connection id "0HMVPKTV2MF15" received FIN.
+2023-12-10 17:43:17.510 +00:00 [DBG] Connection id "0HMVPKTV2MF16" received FIN.
+2023-12-10 17:43:17.539 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:43:17.539 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-10 17:43:17.576 +00:00 [DBG] Connection id "0HMVPKTV2MF15" stopped.
+2023-12-10 17:43:17.576 +00:00 [DBG] Connection id "0HMVPKTV2MF16" stopped.
+2023-12-10 17:43:17.581 +00:00 [DBG] Connection id "0HMVPKTV2MF16" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:43:17.581 +00:00 [DBG] Connection id "0HMVPKTV2MF15" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-10 17:43:24.685 +00:00 [DBG] Connection id "0HMVPKTV2MF17" accepted.
+2023-12-10 17:43:24.688 +00:00 [DBG] Connection id "0HMVPKTV2MF17" started.
+2023-12-10 17:43:24.731 +00:00 [DBG] Connection 0HMVPKTV2MF17 established using the following protocol: "Tls12"
+2023-12-10 17:43:24.774 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7025/api/v1/users - null null
+2023-12-10 17:43:24.850 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-10 17:43:24.862 +00:00 [DBG] The request path  does not match the path filter
+2023-12-10 17:43:24.877 +00:00 [DBG] 1 candidate(s) found for the request path '/api/v1/users'
+2023-12-10 17:43:24.882 +00:00 [DBG] Endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)' with route pattern 'api/v{version:apiVersion}/users' is valid for the request path '/api/v1/users'
+2023-12-10 17:43:24.885 +00:00 [DBG] Request matched endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:43:24.889 +00:00 [INF] Executing endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:43:24.910 +00:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hive.Api.Dtos.User]]] GetUsers(System.String, Int32, Int32) on controller Hive.Api.Controllers.UsersController (Hive.Api).
+2023-12-10 17:43:24.915 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-10 17:43:24.917 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-10 17:43:24.918 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:43:24.921 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-10 17:43:24.923 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-12-10 17:43:24.926 +00:00 [DBG] Executing controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:43:25.031 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-10 17:43:25.245 +00:00 [DBG] Executed controller factory for controller Hive.Api.Controllers.UsersController (Hive.Api)
+2023-12-10 17:43:25.250 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-12-10 17:43:25.252 +00:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-12-10 17:43:25.256 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-12-10 17:43:25.258 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:43:25.259 +00:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-12-10 17:43:25.260 +00:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-12-10 17:43:25.263 +00:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-12-10 17:43:25.265 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:43:25.266 +00:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:43:25.267 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:43:25.270 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:43:25.271 +00:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:43:25.273 +00:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-12-10 17:43:25.275 +00:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-12-10 17:43:25.276 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:43:25.277 +00:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-12-10 17:43:25.279 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:43:25.281 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:43:25.283 +00:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:43:25.284 +00:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-12-10 17:43:25.285 +00:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-12-10 17:43:26.517 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'HiveDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2023-12-10 17:43:26.569 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .Count()'
+2023-12-10 17:43:26.722 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Tb_Users AS t), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        Hive.Data.Models.HiveDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-12-10 17:43:26.756 +00:00 [DBG] Creating DbConnection.
+2023-12-10 17:43:26.776 +00:00 [DBG] Created DbConnection. (19ms).
+2023-12-10 17:43:26.780 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:26.989 +00:00 [DBG] Opened connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:26.994 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-10 17:43:27.001 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2023-12-10 17:43:27.006 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (12ms).
+2023-12-10 17:43:27.013 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tb_Users] AS [t]
+2023-12-10 17:43:27.046 +00:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tb_Users] AS [t]
+2023-12-10 17:43:27.065 +00:00 [DBG] Closing data reader to 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.072 +00:00 [DBG] A data reader for 'HICS' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 17ms reading results.
+2023-12-10 17:43:27.078 +00:00 [DBG] Closing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.084 +00:00 [DBG] Closed connection to database 'HICS' on server '(localdb)\MSSQLLocalDB' (5ms).
+2023-12-10 17:43:27.101 +00:00 [DBG] Compiling query expression: 
+'DbSet<TbUser>()
+    .OrderBy(c => c.Adusername)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2023-12-10 17:43:27.149 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TbUser>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TbUser.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TbUser.AdcreatedOn (DateTime?), 1], [Property: TbUser.Addisabled (bool) Required, 2], [Property: TbUser.Adguid (string) MaxLength(50) ANSI, 3], [Property: TbUser.Adusername (string) Required MaxLength(255) ANSI, 4], [Property: TbUser.CreatedBy (int) Required, 5], [Property: TbUser.CreatedOn (DateTime) Required ValueGenerated.OnAdd, 6], [Property: TbUser.Deleted (bool) Required, 7], [Property: TbUser.DeletedBy (int?), 8], [Property: TbUser.DeletedOn (DateTime?), 9], [Property: TbUser.Department (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 10], [Property: TbUser.DistinguishedManager (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 11], [Property: TbUser.DistinguishedName (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 12], [Property: TbUser.Email (string) MaxLength(512) ANSI, 13], [Property: TbUser.Forenames (string) Required ValueGenerated.OnAdd MaxLength(512) ANSI, 14], [Property: TbUser.Gvguid (string) MaxLength(50) ANSI, 15], [Property: TbUser.HideFromList (bool) Required, 16], [Property: TbUser.LastOnline (DateTime?), 17], [Property: TbUser.Locked (bool) Required, 18], [Property: TbUser.LockedBy (int?), 19], [Property: TbUser.LockedOn (DateTime?), 20], [Property: TbUser.Manager (int) Required, 21], [Property: TbUser.ModifiedBy (int) Required, 22], [Property: TbUser.ModifiedOn (DateTime) Required ValueGenerated.OnAdd, 23], [Property: TbUser.Office (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 24], [Property: TbUser.Online (bool) Required, 25], [Property: TbUser.OpenedCount (int?) ValueGenerated.OnAdd, 26], [Property: TbUser.OpenedLast (DateTime?), 27], [Property: TbUser.PArFilterAdd (string) MaxLength(50) ANSI, 28], [Property: TbUser.PArFilterStatus (int?), 29], [Property: TbUser.PArFilterSupplier (int?), 30], [Property: TbUser.PArFilterType (string) MaxLength(50) ANSI, 31], [Property: TbUser.PArIncludeDisabled (int?), 32], [Property: TbUser.PArOrderBy (string) MaxLength(50) ANSI, 33], [Property: TbUser.PArOrderDirection (int?), 34], [Property: TbUser.PAraMineOnly (int?), 35], [Property: TbUser.PBiPrinter (string) MaxLength(255) ANSI, 36], [Property: TbUser.PCoAiFontSize (int) Required ValueGenerated.OnAdd, 37], [Property: TbUser.PCoAiSortOrder (int) Required ValueGenerated.OnAdd, 38], [Property: TbUser.PDocsLastSearch (string) MaxLength(255) ANSI, 39], [Property: TbUser.PItarActiveOnly (int?), 40], [Property: TbUser.PItarOrderBy (string) MaxLength(50) ANSI, 41], [Property: TbUser.PItarOrderDirection (int?), 42], [Property: TbUser.PLastButton (string) ValueGenerated.OnAdd MaxLength(50) ANSI, 43], [Property: TbUser.PLastEnvironment (int?) ValueGenerated.OnAdd, 44], [Property: TbUser.PLastPage (string) ValueGenerated.OnAdd MaxLength(50) ANSI, 45], [Property: TbUser.PPmHidePhantomised (int?), 46], [Property: TbUser.PSbuSkipProductChecks (int?) ValueGenerated.OnAdd, 47], [Property: TbUser.PSrHideClosed (int?), 48], [Property: TbUser.PSrHideSuperseded (int?), 49], [Property: TbUser.PSrOnlyMe (int?) ValueGenerated.OnAdd, 50], [Property: TbUser.PSrOrderBy (string) MaxLength(50) ANSI, 51], [Property: TbUser.PSrOrderDirection (int?), 52], [Property: TbUser.PSrPrinter (string) MaxLength(255) ANSI, 53], [Property: TbUser.PSrThisYearOnly (int?), 54], [Property: TbUser.PSrltIncludeCompleted (int?), 55], [Property: TbUser.PWediSearchInData (bool) Required Sentinel:True ValueGenerated.OnAdd, 56], [Property: TbUser.PWediSortOrder (int) Required, 57], [Property: TbUser.PoApprover (int?), 58], [Property: TbUser.PoCanRaise (bool) Required, 59], [Property: TbUser.PoLimit (int) Required, 60], [Property: TbUser.Surname (string) Required ValueGenerated.OnAdd MaxLength(512) ANSI, 61], [Property: TbUser.Title (string) Required ValueGenerated.OnAdd MaxLength(255) ANSI, 62] }
+        SELECT t.ID, t.ADCreatedOn, t.ADDisabled, t.ADGUID, t.ADUsername, t.CreatedBy, t.CreatedOn, t.Deleted, t.DeletedBy, t.DeletedOn, t.Department, t.DistinguishedManager, t.DistinguishedName, t.Email, t.Forenames, t.GVGUID, t.HideFromList, t.LastOnline, t.Locked, t.LockedBy, t.LockedOn, t.Manager, t.ModifiedBy, t.ModifiedOn, t.Office, t.Online, t.OpenedCount, t.OpenedLast, t.P_AR_FilterAdd, t.P_AR_FilterStatus, t.P_AR_FilterSupplier, t.P_AR_FilterType, t.P_AR_IncludeDisabled, t.P_AR_OrderBy, t.P_AR_OrderDirection, t.P_ARA_MineOnly, t.P_BI_Printer, t.P_CoAI_FontSize, t.P_CoAI_SortOrder, t.P_DOCS_LastSearch, t.P_ITAR_ActiveOnly, t.P_ITAR_OrderBy, t.P_ITAR_OrderDirection, t.P_LastButton, t.P_LastEnvironment, t.P_LastPage, t.P_PM_HidePhantomised, t.P_SBU_SkipProductChecks, t.P_SR_HideClosed, t.P_SR_HideSuperseded, t.P_SR_OnlyMe, t.P_SR_OrderBy, t.P_SR_OrderDirection, t.P_SR_Printer, t.P_SR_ThisYearOnly, t.P_SRLT_IncludeCompleted, t.P_WEDI_SearchInData, t.P_WEDI_SortOrder, t.PO_Approver, t.PO_CanRaise, t.PO_Limit, t.Surname, t.Title
+        FROM Tb_Users AS t
+        ORDER BY t.ADUsername ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TbUser>, 
+    Hive.Data.Models.HiveDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-10 17:43:27.164 +00:00 [DBG] Opening connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.167 +00:00 [DBG] Opened connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.168 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-10 17:43:27.169 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-12-10 17:43:27.173 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2023-12-10 17:43:27.176 +00:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ID], [t].[ADCreatedOn], [t].[ADDisabled], [t].[ADGUID], [t].[ADUsername], [t].[CreatedBy], [t].[CreatedOn], [t].[Deleted], [t].[DeletedBy], [t].[DeletedOn], [t].[Department], [t].[DistinguishedManager], [t].[DistinguishedName], [t].[Email], [t].[Forenames], [t].[GVGUID], [t].[HideFromList], [t].[LastOnline], [t].[Locked], [t].[LockedBy], [t].[LockedOn], [t].[Manager], [t].[ModifiedBy], [t].[ModifiedOn], [t].[Office], [t].[Online], [t].[OpenedCount], [t].[OpenedLast], [t].[P_AR_FilterAdd], [t].[P_AR_FilterStatus], [t].[P_AR_FilterSupplier], [t].[P_AR_FilterType], [t].[P_AR_IncludeDisabled], [t].[P_AR_OrderBy], [t].[P_AR_OrderDirection], [t].[P_ARA_MineOnly], [t].[P_BI_Printer], [t].[P_CoAI_FontSize], [t].[P_CoAI_SortOrder], [t].[P_DOCS_LastSearch], [t].[P_ITAR_ActiveOnly], [t].[P_ITAR_OrderBy], [t].[P_ITAR_OrderDirection], [t].[P_LastButton], [t].[P_LastEnvironment], [t].[P_LastPage], [t].[P_PM_HidePhantomised], [t].[P_SBU_SkipProductChecks], [t].[P_SR_HideClosed], [t].[P_SR_HideSuperseded], [t].[P_SR_OnlyMe], [t].[P_SR_OrderBy], [t].[P_SR_OrderDirection], [t].[P_SR_Printer], [t].[P_SR_ThisYearOnly], [t].[P_SRLT_IncludeCompleted], [t].[P_WEDI_SearchInData], [t].[P_WEDI_SortOrder], [t].[PO_Approver], [t].[PO_CanRaise], [t].[PO_Limit], [t].[Surname], [t].[Title]
+FROM [Tb_Users] AS [t]
+ORDER BY [t].[ADUsername]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-12-10 17:43:27.208 +00:00 [INF] Executed DbCommand (34ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[ID], [t].[ADCreatedOn], [t].[ADDisabled], [t].[ADGUID], [t].[ADUsername], [t].[CreatedBy], [t].[CreatedOn], [t].[Deleted], [t].[DeletedBy], [t].[DeletedOn], [t].[Department], [t].[DistinguishedManager], [t].[DistinguishedName], [t].[Email], [t].[Forenames], [t].[GVGUID], [t].[HideFromList], [t].[LastOnline], [t].[Locked], [t].[LockedBy], [t].[LockedOn], [t].[Manager], [t].[ModifiedBy], [t].[ModifiedOn], [t].[Office], [t].[Online], [t].[OpenedCount], [t].[OpenedLast], [t].[P_AR_FilterAdd], [t].[P_AR_FilterStatus], [t].[P_AR_FilterSupplier], [t].[P_AR_FilterType], [t].[P_AR_IncludeDisabled], [t].[P_AR_OrderBy], [t].[P_AR_OrderDirection], [t].[P_ARA_MineOnly], [t].[P_BI_Printer], [t].[P_CoAI_FontSize], [t].[P_CoAI_SortOrder], [t].[P_DOCS_LastSearch], [t].[P_ITAR_ActiveOnly], [t].[P_ITAR_OrderBy], [t].[P_ITAR_OrderDirection], [t].[P_LastButton], [t].[P_LastEnvironment], [t].[P_LastPage], [t].[P_PM_HidePhantomised], [t].[P_SBU_SkipProductChecks], [t].[P_SR_HideClosed], [t].[P_SR_HideSuperseded], [t].[P_SR_OnlyMe], [t].[P_SR_OrderBy], [t].[P_SR_OrderDirection], [t].[P_SR_Printer], [t].[P_SR_ThisYearOnly], [t].[P_SRLT_IncludeCompleted], [t].[P_WEDI_SearchInData], [t].[P_WEDI_SortOrder], [t].[PO_Approver], [t].[PO_CanRaise], [t].[PO_Limit], [t].[Surname], [t].[Title]
+FROM [Tb_Users] AS [t]
+ORDER BY [t].[ADUsername]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-12-10 17:43:27.234 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:43:27.353 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:43:27.357 +00:00 [DBG] Context 'HiveDbContext' started tracking 'TbUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-10 17:43:27.358 +00:00 [DBG] Closing data reader to 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.360 +00:00 [DBG] A data reader for 'HICS' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 147ms reading results.
+2023-12-10 17:43:27.361 +00:00 [DBG] Closing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.362 +00:00 [DBG] Closed connection to database 'HICS' on server '(localdb)\MSSQLLocalDB' (1ms).
+2023-12-10 17:43:27.419 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-10 17:43:27.426 +00:00 [DBG] No information found on request to perform content negotiation.
+2023-12-10 17:43:27.428 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-10 17:43:27.429 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-10 17:43:27.431 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-10 17:43:27.434 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hive.Api.Dtos.User, Hive.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-10 17:43:27.541 +00:00 [INF] Executed action Hive.Api.Controllers.UsersController.GetUsers (Hive.Api) in 2613.1337ms
+2023-12-10 17:43:27.545 +00:00 [INF] Executed endpoint 'Hive.Api.Controllers.UsersController.GetUsers (Hive.Api)'
+2023-12-10 17:43:27.553 +00:00 [DBG] 'HiveDbContext' disposed.
+2023-12-10 17:43:27.561 +00:00 [DBG] Disposing connection to database 'HICS' on server '(localdb)\MSSQLLocalDB'.
+2023-12-10 17:43:27.565 +00:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2023-12-10 17:43:27.567 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7025/api/v1/users - 200 3793 application/json; charset=utf-8 2798.3283ms
