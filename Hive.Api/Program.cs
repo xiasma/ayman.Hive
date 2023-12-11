@@ -9,8 +9,6 @@ using Hive.Data.Repositories;
 
 
 // TODO move this to config + environment variable
-const string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HICS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
 Log.Logger = new LoggerConfiguration()
 	.MinimumLevel.Debug()
 	.WriteTo.Console()
@@ -31,10 +29,10 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(setupAction =>
 {
-	//var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-	//var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
+	var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+	var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
 
-	//setupAction.IncludeXmlComments(xmlCommentsFullPath);
+	setupAction.IncludeXmlComments(xmlCommentsFullPath);
 
 	//setupAction.AddSecurityDefinition("HiveApiBearerAuth", new OpenApiSecurityScheme()
 	//{
@@ -58,7 +56,11 @@ builder.Services.AddSwaggerGen(setupAction =>
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
 builder.Services.AddDbContext<HiveDbContext>(
-	dbContextOptions => dbContextOptions.UseSqlServer(connectionString));
+	dbContextOptions => dbContextOptions.UseSqlServer(
+		builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"]
+		//, builder =>
+		//{ builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null); }
+		));
 
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 

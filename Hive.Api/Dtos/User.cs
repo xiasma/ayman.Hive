@@ -1,5 +1,8 @@
 ﻿namespace Hive.Api.Dtos
 {
+	/// <summary>
+	/// Describes a user of the Hive system.
+	/// </summary>
 	public class User
 	{
 		public int Id { get; set; }

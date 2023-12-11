@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hive.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Hive.Api.Controllers.UsersController.GetUsers(System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets a collection of users.
+            </summary>
+            <param name="name">Filter to contain specified name/username (optional).</param>
+            <param name="pageNumber">1-indexed - page of results to return.</param>
+            <param name="pageSize">Maximum number of records to return iun a page</param>
+            <returns>Users who are not flagged as Deleted.</returns>
+        </member>
+        <member name="M:Hive.Api.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Get a user as specified by the ID.
+            </summary>
+            <param name="id">The unique ID of the user.</param>
+            <returns>The requested user.</returns>
+        </member>
+        <member name="M:Hive.Api.Controllers.UsersController.CreateUser(Hive.Api.Dtos.User)">
+            <summary>
+            Creates a new instance of a user.
+            </summary>
+            <param name="user">The user to be created.</param>
+            <returns>The newly created user.</returns>
+        </member>
+        <member name="M:Hive.Api.Controllers.UsersController.ReplaceUser(System.Int32,Hive.Api.Dtos.UpdateUser)">
+            <summary>
+            Updates a user record.
+            </summary>
+            <param name="userId">The unique ID of the user.</param>
+            <param name="user">The complete details of target user definition.</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Hive.Api.Controllers.UsersController.ChangeUser(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Hive.Api.Dtos.UpdateUser})">
+            <summary>
+            Partially updates a User resource.
+            </summary>
+            <param name="userId">The ID of the user to modify.</param>
+            <param name="patchDocument">Details of the fields to be changed of the specified user.</param>
+            <example>PATCH https://localhost:7025/api/v1/users/16 
+            -H 'Content-Type: application/json'
+            -H 'Accept: application/json'
+            -d '[{"op": "replace","path": "/Surname","value": "this is his new surname"},{"op": "replace","path": "/Adusername","value": "waynesusername"}]'
+            </example>
+        </member>
+        <member name="T:Hive.Api.Dtos.UpdateUser">
+            <summary>
+            An unidentified User (no ID) to describe new or modified properties.
+            </summary>
+        </member>
+        <member name="T:Hive.Api.Dtos.User">
+            <summary>
+            Describes a user of the Hive system.
+            </summary>
+        </member>
+    </members>
+</doc>

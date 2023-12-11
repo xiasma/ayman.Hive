@@ -26,7 +26,14 @@ namespace Hive.Api.Controllers
 			this._mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
 		}
 
-		[HttpGet]
+		/// <summary>
+		/// Gets a collection of users.
+		/// </summary>
+		/// <param name="name">Filter to contain specified name/username (optional).</param>
+		/// <param name="pageNumber">1-indexed - page of results to return.</param>
+		/// <param name="pageSize">Maximum number of records to return iun a page</param>
+		/// <returns>Users who are not flagged as Deleted.</returns>
+				[HttpGet]
 		public async Task<ActionResult<IEnumerable<User>>> GetUsers(
 			 string? name, int pageNumber = 1, int pageSize = 10)
 		{
@@ -42,6 +49,11 @@ namespace Hive.Api.Controllers
 			return Ok(_mapper.Map<IEnumerable<User>>(tbUsers));
 		}
 
+		/// <summary>
+		/// Get a user as specified by the ID.
+		/// </summary>
+		/// <param name="id">The unique ID of the user.</param>
+		/// <returns>The requested user.</returns>
 		[HttpGet("{id}", Name="GetUser")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		[ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -57,6 +69,11 @@ namespace Hive.Api.Controllers
 			return Ok(_mapper.Map<User>(user));
 		}
 
+		/// <summary>
+		/// Creates a new instance of a user.
+		/// </summary>
+		/// <param name="user">The user to be created.</param>
+		/// <returns>The newly created user.</returns>
 		[HttpPost]
 		public async Task<ActionResult<User>> CreateUser(User user)
 		{
@@ -73,6 +90,12 @@ namespace Hive.Api.Controllers
 				createdUserToReturn);
 		}
 
+		/// <summary>
+		/// Updates a user record.
+		/// </summary>
+		/// <param name="userId">The unique ID of the user.</param>
+		/// <param name="user">The complete details of target user definition.</param>
+		/// <returns>Nothing</returns>
 		[HttpPut("{userId}")]
 		public async Task<ActionResult> ReplaceUser(int userId, UpdateUser user)
 		{
@@ -93,7 +116,7 @@ namespace Hive.Api.Controllers
 		/// Partially updates a User resource.
 		/// </summary>
 		/// <param name="userId">The ID of the user to modify.</param>
-		/// <param name="patchDocument"></param>
+		/// <param name="patchDocument">Details of the fields to be changed of the specified user.</param>
 		/// <example>PATCH https://localhost:7025/api/v1/users/16 
 		/// -H 'Content-Type: application/json'
 		/// -H 'Accept: application/json'
@@ -128,6 +151,5 @@ namespace Hive.Api.Controllers
 
 			return NoContent();
 		}
-
 	}
 }

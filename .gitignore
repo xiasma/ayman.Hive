@@ -1,3 +1,6 @@
+
+Hive.Api/logs/
+
 *.swp
 *.*~
 project.lock.json

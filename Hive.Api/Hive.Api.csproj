@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>false</InvariantGlobalization>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>Hive.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +28,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hive.Data\Hive.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="logs\" />
   </ItemGroup>
 
 </Project>

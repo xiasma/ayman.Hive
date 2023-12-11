@@ -1,5 +1,8 @@
 ﻿namespace Hive.Api.Dtos
 {
+	/// <summary>
+	/// An unidentified User (no ID) to describe new or modified properties.
+	/// </summary>
 	public class UpdateUser
 	{
 		public bool Deleted { get; set; }
