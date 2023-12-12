@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.StaticFiles;
-using Microsoft.EntityFrameworkCore;
-using Hive.Data.Models;
-using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Reflection;
-using System.Text;
 using Hive.Data.Repositories;
+using Hive.Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 // TODO move this to config + environment variable
@@ -55,14 +53,14 @@ builder.Services.AddSwaggerGen(setupAction =>
 
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
+var hiveSqlConnectionString = builder.Configuration.GetConnectionString("HiveSqlConnectionString");
 builder.Services.AddDbContext<HiveDbContext>(
-	dbContextOptions => dbContextOptions.UseSqlServer(
-		builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"], builder =>
-			{ builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null); }
+	dbContextOptions => dbContextOptions.UseSqlServer(hiveSqlConnectionString, builder =>
+		{ builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null); }
 		));
 
-// builder.Services.AddScoped<IUsersRepository, UsersRepository>();
-builder.Services.AddScoped<IUsersRepository>(repo => new SqlUsersRepository(builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"]));
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+//builder.Services.AddScoped<IUsersRepository>(repo => new SqlUsersRepository(hiveSqlConnectionString));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

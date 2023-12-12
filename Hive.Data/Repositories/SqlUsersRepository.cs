@@ -131,7 +131,7 @@ namespace Hive.Data.Repositories
                     command.CommandType = CommandType.StoredProcedure;
 
                     // Add parameters to the command
-                    command.Parameters.Add(new SqlParameter("@FilterValue", SqlDbType.NVarChar) { Value = name });
+                    command.Parameters.Add(new SqlParameter("@FilterValue", SqlDbType.NVarChar) { Value = name ?? string.Empty });
                     command.Parameters.Add(new SqlParameter("@PageNumber", SqlDbType.Int) { Value = pageNumber });
                     command.Parameters.Add(new SqlParameter("@MaxPageSize", SqlDbType.Int) { Value = pageSize });
 
