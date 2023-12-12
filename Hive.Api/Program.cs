@@ -57,12 +57,12 @@ builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
 builder.Services.AddDbContext<HiveDbContext>(
 	dbContextOptions => dbContextOptions.UseSqlServer(
-		builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"]
-		//, builder =>
-		//{ builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null); }
+		builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"], builder =>
+			{ builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null); }
 		));
 
-builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+// builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IUsersRepository>(repo => new SqlUsersRepository(builder.Configuration["ConnectionStrings:HiveDataSqlConnectionString"]));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
